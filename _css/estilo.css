@@ -1,0 +1,196 @@
+/* Formatação do site*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin:0; padding: 0;
+    font-size: 20px; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    /*box-sizing: border-box;*/
+}
+
+main{
+    max-width: 1200px;
+    min-height: 1150px;
+    margin: 0px auto 0px auto;
+    background-color: #DDD;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+/* Menu do site*/
+#menu{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    float: none;
+}
+
+ul{
+    list-style: none;
+
+}
+ul li a{
+    text-decoration: none;
+    float:left;
+    padding: 25px 154.5px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+a:hover{
+    background-color: rgb(37, 41, 49);
+    color: #fff;
+}
+#menu li a:hover{
+    color: rgb(24, 139, 233);
+}
+
+/* Banner */
+.carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    min-height: 380px;
+    max-width: 1280px;
+}
+
+.container{
+    /*display: flex;*/
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container img{
+    max-width:1280px;
+    max-height:380px;
+    width: auto;
+    height: auto;
+}
+
+#banner{
+    float: left;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+#banner div img{
+    width: 100%;
+    height: auto;
+}
+
+img{
+    object-fit: cover;
+    height: 380px;
+    width: 1280px;
+}
+
+/* Conteudo do site*/
+
+#conteudo_esquerdo{
+    width: 70%;
+    height: 650px;
+    float: left;
+    border: 0px solid red;
+}
+.artigo_esquerdo{
+    width: 98%;
+    height: 150px;
+    border: 1px dashed rgb(173, 171, 171);
+    float: left;
+    margin: 5px;
+}
+.artigo_esquerdo figure{
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    float: left;
+}
+.artigo_esquerdo p{
+    font-size: 18px;
+    color: #333;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    float: left;
+    width: 80%;
+}
+.artigo_esquerdo figure img{
+    width: 100%;
+    height: 150px;
+
+}
+#conteudo_esquerdo a:hover p{
+    color: rgb(24, 139, 233);
+}
+
+/*  Parte direita*/
+#conteudo_direito{
+    width: 29.6%;
+    height: 650px;
+    float: left;
+    border: 0px solid blue;
+}
+
+.artigo_direito{
+    width: 98%;
+    height: 100px;
+    border: 1px dashed rgb(173, 171, 171);
+    float: left;
+    margin: 5px;
+}
+
+.artigo_direito figure{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    float: left;
+}
+.artigo_direito p{
+    font-size: 14px;
+    color: #333;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    float: left;
+    width: 65%;
+}
+.artigo_direito figure img{
+    width: 100%;
+    height: 100px;
+
+}
+#conteudo_direito a:hover p{
+    color: rgb(24, 139, 233);
+}
+
+footer{
+    width: 100%;
+    max-width: 1200px;
+    height: 50px;
+    float:inline-end;
+    background-color: black;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+footer p{
+    color: white;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 900px){
+    .carrossel{ 
+        width:100%; 
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .partecima{
+        width: 100%;
+    }
+}
+@media only screen and (max-device-width: 700px){
+    .carrossel{ 
+        width:400px; 
+    }
+}

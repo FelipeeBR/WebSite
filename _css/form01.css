@@ -1,0 +1,62 @@
+
+form h3{
+    text-align: center;
+    color: #333;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+form input[type=text]{
+    width: 70%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-left: 120px;
+    margin: 10px 120px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+form input[type=submit]{
+    width: 71.5%;
+    height: 40px;
+    background: rgb(24, 139, 233);
+    color: white;
+    margin-left: 120px;
+    border: 0;
+    border-radius: 20px;
+}
+
+form input[type=submit]:hover{
+    background-color: rgb(12, 114, 197);
+}
+form input[type=text]:focus{
+    outline: 0;
+}
+
+form input[type=radio]{
+    padding-left: 10px;
+    margin-left: 120px;
+    font-size: 16px;
+    margin: 3px;
+}
+
+fieldset{
+    margin-left: 120px;
+    height: 55px;
+    font-size: 16px;
+    color: #333;
+    width: 71%;
+}
+
+
+form textarea{
+    margin-left: 120px;
+    height: 55px;
+    width: 71.2%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+form textarea :focus{
+    outline: 20;
+}
